@@ -40,7 +40,7 @@ public final class Timestamp {
 
     private void scheduleClockUpdating() {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor(runnable -> {
-            Thread thread = new Thread(runnable, "smart-cloud-timestamp");
+            Thread thread = new Thread(runnable, "boyun-cloud-timestamp");
             thread.setDaemon(true);
             return thread;
         });
