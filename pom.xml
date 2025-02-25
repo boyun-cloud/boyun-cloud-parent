@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.boyun.cloud</groupId>
+        <artifactId>boyun-cloud-starter-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.boyun.cloud</groupId>
+    <artifactId>boyun-cloud-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>boyun-cloud-parent</name>
+    <description>BoyunCloud云服务平台父级工程</description>
+    <packaging>pom</packaging>
+    <properties>
+        <java.version>1.8</java.version>
+        <boyun-cloud.version>0.0.1-SNAPSHOT</boyun-cloud.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--BoyunCloud依赖配置-->
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-dependencies</artifactId>
+                <version>${boyun-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+    <!--boyun-cloud-modules-->
+   <modules>
+
+   </modules>
+
+
+
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>snapshots</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>snapshots</id>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>rdc-releases</id>
+            <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>rdc-snapshots</id>
+            <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <name>ReleasesProxy</name>
+            <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <name>SnapshotsProxy</name>
+            <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <fork>true</fork>
+                    <mainClass>${start-class}</mainClass>
+                    <layout>ZIP</layout>
+                    <classifier>${project.version}</classifier>
+                    <executable>false</executable>
+                    <excludeDevtools>false</excludeDevtools>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
