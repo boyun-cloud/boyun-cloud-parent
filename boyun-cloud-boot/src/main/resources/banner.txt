@@ -1,0 +1,15 @@
+${AnsiColor.BRIGHT_BLUE}
+ _                                             _                 _                  _       _    __
+| |                                           | |               | |                | |     | |  / _|
+| |__   ___  _   _ _   _ _ __    ______    ___| | ___  _   _  __| |  ______   _ __ | | __ _| |_| |_ ___  _ __ _ __ ___
+| '_ \ / _ \| | | | | | | '_ \  |______|  / __| |/ _ \| | | |/ _` | |______| | '_ \| |/ _` | __|  _/ _ \| '__| '_ ` _ \
+| |_) | (_) | |_| | |_| | | | |          | (__| | (_) | |_| | (_| |          | |_) | | (_| | |_| || (_) | |  | | | | | |
+|_.__/ \___/ \__, |\__,_|_| |_|           \___|_|\___/ \__,_|\__,_|          | .__/|_|\__,_|\__|_| \___/|_|  |_| |_| |_|
+              __/ |                                                          | |
+             |___/                                                           |_|
+  ${AnsiColor.DEFAULT} -----------------*------------------ ${AnsiColor.BRIGHT_GREEN}Microservice Architecture Platform   ${AnsiColor.DEFAULT}--------------------  *------------------
+  ${AnsiColor.DEFAULT} Application Name :                      ${AnsiColor.BRIGHT_MAGENTA} :: ${spring.application.name} ::
+  ${AnsiColor.DEFAULT} Application Port :                      ${AnsiColor.BRIGHT_MAGENTA} :: ${server.port}             ::
+  ${AnsiColor.DEFAULT} Register Center  :                      ${AnsiColor.BRIGHT_MAGENTA} :: ${spring.cloud.nacos.discovery.server-addr} ::
+  ${AnsiColor.DEFAULT} Application Path :                      ${AnsiColor.BRIGHT_MAGENTA} :: ${server.servlet.context-path} ::
+  ${AnsiColor.DEFAULT} -----------------* ${AnsiColor.BRIGHT_CYAN} Copyright © 2018-2024 BoyunCloud Systems Incorporated. All rights reserved. ${AnsiColor.DEFAULT} *------------------
