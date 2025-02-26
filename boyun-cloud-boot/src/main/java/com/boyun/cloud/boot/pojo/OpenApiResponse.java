@@ -11,6 +11,8 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
+
 /**
  * @className: com.boyun.cloud.boot.pojo.OpenApiResponse
  * @projectName: 封装BoyunCloud项目-OpenApiResponse类
@@ -26,7 +28,9 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @Accessors(chain = true)
 @ApiModel(value = "OpenApi统一返回数据实体")
-public class OpenApiResponse<T> {
+public class OpenApiResponse<T> implements Serializable {
+
+    private static final long serialVersionUID = -6193349631086606932L;
 
     /**
      * 编码-code
