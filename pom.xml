@@ -37,7 +37,7 @@
    <modules>
        <module>boyun-cloud-boot</module>
        <module>boyun-cloud-common</module>
-
+       <module>boyun-cloud-toolkit</module>
    </modules>
 
 
