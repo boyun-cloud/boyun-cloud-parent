@@ -1,9 +1,9 @@
 package com.boyun.cloud.boot.pojo;
 
-import com.boyun.cloud.boot.Timestamp;
-import com.boyun.cloud.boot.constant.Constants;
 import com.boyun.cloud.boot.exception.ErrorMessage;
 import com.boyun.cloud.boot.utils.ApiResultUtil;
+import com.boyun.cloud.boot.Timestamp;
+import com.boyun.cloud.boot.constant.Constants;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
