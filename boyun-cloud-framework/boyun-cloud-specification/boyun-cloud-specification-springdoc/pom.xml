@@ -4,20 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.boyun.cloud</groupId>
-        <artifactId>boyun-cloud-parent</artifactId>
+        <artifactId>boyun-cloud-specification</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.boyun.cloud</groupId>
-    <artifactId>boyun-cloud-framework</artifactId>
+    <artifactId>boyun-cloud-specification-springdoc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>boyun-cloud-framework</name>
+    <name>boyun-cloud-specification-springdoc</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-
-
-    <modules>
-        <module>boyun-cloud-specification</module>
-    </modules>
+    <packaging>jar</packaging>
 
     <build>
         <plugins>
