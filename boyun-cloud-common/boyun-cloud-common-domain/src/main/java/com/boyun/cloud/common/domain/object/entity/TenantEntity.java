@@ -1,5 +1,9 @@
 package com.boyun.cloud.common.domain.object.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.boyun.cloud.common.domain.Entity;
+import lombok.*;
+
 /**
  * @className: com.boyun.cloud.common.domain.object.entity.TenantEntity
  * @projectName: BoyunCloud项目
@@ -10,7 +14,28 @@ package com.boyun.cloud.common.domain.object.entity;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2025 BoyunCloud Systems Incorporated. All rights reserved.
  */
-public class TenantEntity  extends BaseEntity{
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
+public class TenantEntity extends BaseEntity {
 
     private static final long serialVersionUID = -3428730246433384031L;
+
+
+    /**
+     * 应用Id
+     */
+    @Getter
+    @Setter
+    @TableField(value = Entity.APP_ID)
+    private Long appId;
+
+    /**
+     * 租户Id
+     */
+    @Getter
+    @Setter
+    @TableField(value = Entity.TENANT_ID)
+    private Long tenantId;
 }
