@@ -1,6 +1,7 @@
 package com.boyun.cloud.common.repository;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * @className: com.boyun.cloud.common.repository.Mapper
@@ -12,5 +13,5 @@ package com.boyun.cloud.common.repository;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2024 BoyunCloud Systems Incorporated. All rights reserved.
  */
-public interface Mapper<T> {
+public interface Mapper<T> extends BaseMapper<T> {
 }

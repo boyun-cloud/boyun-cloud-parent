@@ -1,5 +1,7 @@
 package com.boyun.cloud.common.repository;
 
+import com.baomidou.mybatisplus.extension.service.IService;
+
 /**
  * @className: com.boyun.cloud.common.repository.Service
  * @projectName: 封装BoyunCloud项目-Service类
@@ -10,5 +12,5 @@ package com.boyun.cloud.common.repository;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2024 BoyunCloud Systems Incorporated. All rights reserved.
  */
-public interface Service<T> {
+public interface Service<T> extends IService<T> {
 }

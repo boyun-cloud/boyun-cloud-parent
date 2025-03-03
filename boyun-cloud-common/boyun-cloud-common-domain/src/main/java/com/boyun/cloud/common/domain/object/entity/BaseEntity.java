@@ -55,7 +55,7 @@ public class BaseEntity implements Entity {
      */
     @Getter
     @Setter
-    @TableField(value = Entity.UPDATOR_ID, fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = Entity.UPDATOR_ID, fill = FieldFill.UPDATE)
     private Long updatorId;
 
 
@@ -64,7 +64,7 @@ public class BaseEntity implements Entity {
      */
     @Getter
     @Setter
-    @TableField(value = Entity.UPDATED_TIME, fill = FieldFill.INSERT_UPDATE)
+    @TableField(value = Entity.UPDATED_TIME, fill = FieldFill.UPDATE)
     private Date updatedTime;
 
     /**
