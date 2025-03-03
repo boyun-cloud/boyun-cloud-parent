@@ -22,7 +22,6 @@ public class TenantEntity extends BaseEntity {
 
     private static final long serialVersionUID = -3428730246433384031L;
 
-
     /**
      * 应用Id
      */

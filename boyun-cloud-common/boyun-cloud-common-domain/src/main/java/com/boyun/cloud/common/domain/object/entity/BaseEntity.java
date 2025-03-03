@@ -24,6 +24,7 @@ import java.util.Date;
 public class BaseEntity implements Entity {
 
     private static final long serialVersionUID = 1363028260282722381L;
+
     /**
      * 版本号
      */
