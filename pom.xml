@@ -38,6 +38,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-boot</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-common-base</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -77,26 +89,6 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-        <repository>
-            <id>rdc-releases</id>
-            <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>rdc-snapshots</id>
-            <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -120,40 +112,22 @@
                 <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
-        <pluginRepository>
-            <id>rdc-releases</id>
-            <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>rdc-snapshots</id>
-            <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
+
     </pluginRepositories>
 
     <distributionManagement>
         <repository>
-            <id>rdc-releases</id>
-            <name>ReleasesProxy</name>
-            <url>https://packages.aliyun.com/maven/repository/2022020-release-dkLtZC/</url>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>g-umvz5447-boyun-cloud-release</id>
+            <name>release</name>
+            <url>https://g-umvz5447-maven.pkg.coding.net/repository/boyun-cloud/release/</url>
         </repository>
         <snapshotRepository>
-            <id>rdc-snapshots</id>
-            <name>SnapshotsProxy</name>
-            <url>https://packages.aliyun.com/maven/repository/2022020-snapshot-3D7bcq/</url>
+            <!--必须与 settings.xml 的 id 一致-->
+            <id>g-umvz5447-boyun-cloud-snapshot</id>
+            <name>snapshot</name>
+            <url>https://g-umvz5447-maven.pkg.coding.net/repository/boyun-cloud/snapshot/</url>
         </snapshotRepository>
-
     </distributionManagement>
 
     <build>
