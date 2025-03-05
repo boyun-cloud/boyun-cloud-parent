@@ -51,11 +51,11 @@ public class PageRequest implements Serializable {
    * 搜索关键词
    */
   @ApiModelProperty(
-      value = "keyword",
-      name = "keyword",
-      notes = "每页条目数",
-      example = "关键词",
-      required = true)
+          value = "keyword",
+          name = "keyword",
+          notes = "关键词",
+          example = "关键词",
+          required = true)
   @JsonProperty(value = "keyword")
   private String keyword;
 }
