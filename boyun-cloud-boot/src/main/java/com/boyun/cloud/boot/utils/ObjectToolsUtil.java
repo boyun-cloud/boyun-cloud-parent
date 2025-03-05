@@ -1,7 +1,7 @@
 package com.boyun.cloud.boot.utils;
 
 
-import com.boyun.cloud.boot.annotation.MetaModelProperty;
+import com.boyun.cloud.boot.annotation.ApiMetaProperty;
 import com.boyun.cloud.boot.pojo.ObjectSourceModel;
 import com.boyun.cloud.boot.pojo.ObjectTargetModel;
 import lombok.experimental.UtilityClass;
@@ -123,8 +123,8 @@ public class ObjectToolsUtil {
                     source.setReturnType(field.getType());
                     Object fieldValue = getFieldValueByName(fieldName, object);
                     // 通过自定义注解@ModelPropertyMeta拿到属性注释
-                    if (field.isAnnotationPresent(MetaModelProperty.class)) {
-                        MetaModelProperty annotation = field.getAnnotation(MetaModelProperty.class);
+                    if (field.isAnnotationPresent(ApiMetaProperty.class)) {
+                        ApiMetaProperty annotation = field.getAnnotation(ApiMetaProperty.class);
                         source.setComment(annotation.name());
                     }
                     source.setValue(fieldValue == null ? StringUtils.EMPTY : fieldValue);
