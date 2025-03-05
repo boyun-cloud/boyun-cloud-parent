@@ -4,29 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.boyun.cloud</groupId>
-        <artifactId>boyun-cloud-parent</artifactId>
+        <artifactId>boyun-cloud-starter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.boyun.cloud</groupId>
-    <artifactId>boyun-cloud-starter</artifactId>
+    <artifactId>boyun-cloud-starter-redis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>boyun-cloud-starter</name>
+    <name>boyun-cloud-starter-redis</name>
     <description>Demo project for Spring Boot</description>
-    <packaging>pom</packaging>
-
-
-    <modules>
-        <!--Boot拓展支持-->
-        <module>boyun-cloud-starter-boot</module>
-        <!--Mybatis拓展支持-->
-        <module>boyun-cloud-starter-mybatis</module>
-        <!--Redis拓展支持-->
-        <module>boyun-cloud-starter-redis</module>
-        <!--Redisson拓展支持-->
-        <module>boyun-cloud-starter-redisson</module>
-        <!--Security拓展支持-->
-        <module>boyun-cloud-starter-security</module>
-    </modules>
+    <packaging>jar</packaging>
 
     <build>
         <plugins>
