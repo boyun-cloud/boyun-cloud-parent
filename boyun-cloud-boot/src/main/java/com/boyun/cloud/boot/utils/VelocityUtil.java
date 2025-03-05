@@ -2,6 +2,7 @@ package com.boyun.cloud.boot.utils;
 
 import com.boyun.cloud.boot.constant.Templates;
 import com.boyun.cloud.boot.exception.ApplicationException;
+import lombok.experimental.UtilityClass;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 
@@ -20,11 +21,8 @@ import java.util.Map;
  * @version: 1.0.0
  * @copyright: Copyright © 2018-2024 BoyunCloud Systems Incorporated. All rights reserved.
  */
+@UtilityClass
 public class VelocityUtil {
-
-
-    private VelocityUtil() {
-    }
 
     /**
      * 替换的模板中的参数
