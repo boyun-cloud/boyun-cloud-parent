@@ -114,7 +114,7 @@ public class UserInfo implements Serializable {
     /**
      * 登录账户角色集合
      */
-    @ApiModelProperty(value = "状态[0=禁用，1=启用，2=冻结,3注销]", name = "roles")
+    @ApiModelProperty(value = "登录账户角色集合", name = "roles")
     private List<String> roles;
 
     /**
@@ -132,14 +132,14 @@ public class UserInfo implements Serializable {
     /**
      * 创建时间
      */
-    @ApiModelProperty(notes = "创建时间")
+    @ApiModelProperty(value = "创建时间", name = "createTime")
     @JsonFormat(pattern = Constants.UNIFIED_FORMAT_TIME)
     private Date createTime;
 
     /**
      * 上次登录时间
      */
-    @ApiModelProperty(notes = "上次登录时间")
+    @ApiModelProperty(value = "上次登录时间", name = "lastLogin")
     @JsonFormat(pattern = Constants.UNIFIED_FORMAT_TIME)
     private Date lastLogin;
 
@@ -170,7 +170,7 @@ public class UserInfo implements Serializable {
     /**
      * 账户类型[0-系统用户 1-商户用户 2-租户用户 3-商家用户 4-员工用户 5-业务伙伴 6-游客]
      */
-    @ApiModelProperty("账户类型[0-系统用户 1-商户用户 2-租户用户 3-商家用户 4-员工用户 5-业务伙伴 6-游客]")
+    @ApiModelProperty(value = "账户类型[0-系统用户 1-商户用户 2-租户用户 3-商家用户 4-员工用户 5-业务伙伴 6-游客]", name = "userType")
     private Integer userType = 1;
 
     /**
@@ -194,18 +194,18 @@ public class UserInfo implements Serializable {
     /**
      * 用户角色列表
      */
-    @ApiModelProperty("用户角色列表")
+    @ApiModelProperty(value = "用户角色列表", name = "用户角色列表")
     private List<String> authorities = new ArrayList<>();
 
     /**
      * 用户权限列表
      */
-    @ApiModelProperty("用户权限列表")
+    @ApiModelProperty(value = "用户权限列表", name = "permissions")
     private List<String> permissions = new ArrayList<>();
 
     /**
      * 用户动态属性
      */
-    @ApiModelProperty("用户动态属性")
+    @ApiModelProperty(value = "用户动态属性", name = "attributes")
     private Map<String, Object> attributes = Maps.newHashMap();
 }
