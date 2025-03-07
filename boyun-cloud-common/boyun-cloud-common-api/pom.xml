@@ -13,6 +13,19 @@
     <name>boyun-cloud-common-api</name>
     <description>Demo project for Spring Boot</description>
 
+    <dependencies>
+        <!--lombok模块-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.boyun.cloud</groupId>
+            <artifactId>boyun-cloud-boot</artifactId>
+        </dependency>
+    </dependencies>
+
 
     <build>
         <plugins>

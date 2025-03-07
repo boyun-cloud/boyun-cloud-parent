@@ -38,15 +38,48 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+
             <dependency>
                 <groupId>com.boyun.cloud</groupId>
                 <artifactId>boyun-cloud-boot</artifactId>
                 <version>${boyun-cloud.version}</version>
             </dependency>
 
+
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-common-api</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.boyun.cloud</groupId>
                 <artifactId>boyun-cloud-common-base</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-common-center</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-common-domain</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-common-sphere</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-common-web</artifactId>
                 <version>${boyun-cloud.version}</version>
             </dependency>
 
@@ -64,8 +97,6 @@
        <module>boyun-cloud-starter</module>
        <module>boyun-cloud-toolkit</module>
    </modules>
-
-
 
 
     <repositories>
