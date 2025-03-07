@@ -83,6 +83,34 @@
                 <version>${boyun-cloud.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-starter-boot</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-starter-mybatis</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-starter-redis</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-starter-redisson</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.boyun.cloud</groupId>
+                <artifactId>boyun-cloud-starter-security</artifactId>
+                <version>${boyun-cloud.version}</version>
+            </dependency>
+
+
+
         </dependencies>
     </dependencyManagement>
 

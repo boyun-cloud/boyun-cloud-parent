@@ -22,7 +22,7 @@
         </dependency>
         <dependency>
             <groupId>com.boyun.cloud</groupId>
-            <artifactId>boyun-cloud-boot</artifactId>
+            <artifactId>boyun-cloud-common-base</artifactId>
         </dependency>
     </dependencies>
 

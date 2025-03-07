@@ -12,12 +12,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>boyun-cloud-common-base</name>
     <description>Demo project for Spring Boot</description>
+    <packaging>jar</packaging>
 
 
     <dependencies>
         <dependency>
             <groupId>com.boyun.cloud</groupId>
-            <artifactId>boyun-cloud-boot</artifactId>
+            <artifactId>boyun-cloud-starter-boot</artifactId>
         </dependency>
     </dependencies>
 
