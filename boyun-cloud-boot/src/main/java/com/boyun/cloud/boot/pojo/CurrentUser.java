@@ -30,10 +30,8 @@ import java.util.List;
 @Accessors(chain = true)
 public class CurrentUser implements Serializable {
 
-  private static final long serialVersionUID = 9001535597562769399L;
+  private static final long serialVersionUID = 90015355975627L;
 
-  /** 应用Id */
-  @ApiModelProperty(value = "应用Id", name = "appId")
   private Long appId;
 
   /** 用户池Id */

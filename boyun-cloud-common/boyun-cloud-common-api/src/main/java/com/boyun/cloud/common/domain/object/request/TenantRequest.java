@@ -35,7 +35,6 @@ public class TenantRequest extends BaseRequest {
     @ApiModelProperty(value = "租户id")
     private Long tenantId;
 
-
     /**
      * 数据隔离id
      */
