@@ -22,6 +22,7 @@
         <module>boyun-cloud-common-base</module>
         <module>boyun-cloud-common-center</module>
         <module>boyun-cloud-common-domain</module>
+        <module>boyun-cloud-common-infras</module>
         <module>boyun-cloud-common-sphere</module>
         <module>boyun-cloud-common-web</module>
     </modules>
