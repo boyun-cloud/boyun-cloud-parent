@@ -33,7 +33,7 @@
             <!--BoyunCloud依赖配置-->
             <dependency>
                 <groupId>com.boyun.cloud</groupId>
-                <artifactId>boyun-cloud-starter-parent</artifactId>
+                <artifactId>boyun-cloud-dependencies-parent</artifactId>
                 <version>${boyun-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
